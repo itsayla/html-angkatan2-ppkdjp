@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Peserta</title>
+
+    <!-- 
+        CSS : Cascading Style Sheet()
+        CSS : 3 (internal, eksternal, inline)
+        Internal CSS : CSS ada di dalam file html
+        External CSS : CSS ada di file ber ext.css
+        Inline CSS : CSS nya dijadikan attribute dengan style
+        -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightpink;
+            justify-self: center;
+        }
+
+        h2 {
+            color:rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        p {
+            color:rgb(38, 39, 37);
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        input[type='text'],
+        input[type='email'],
+        input[type='number'] {
+            border: 1px solid #ccc;
+            width: 300px;
+            padding: 12px 15px;
+            border-radius: 10px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.3s; 
+        }
+        input:focus {
+            border-color: rgb(0, 174, 255);
+        }
+
+        .btn-submit, .btn-reset {
+            width: 140px;
+            margin: 5px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s
+        }
+        .btn-submit {
+            background-color: rgb(0, 0, 0);
+            color: #fff;    
+        }
+        .btn-reset {
+            background-color: #fff;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            margin-top: 10px;
+        }   
+        .btn-submit:hover {
+            background-color: rgb(0, 110, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pendaftaran Siswa</h2>
+    <p>Silakan isi data diri anda</p>
+
+    <form method="post" action="3.html">
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" placeholder="Masukkan Nama" required>
+        </div>
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="admin@gmail.com" required>
+        </div>
+         <div class="form-group">
+            <label for="number">No. Telpon</label>
+            <input type="number" placeholder="083872677626" required>
+        </div>
+        <div class="form group">
+            <button type="submit" class="btn-submit" value="simpan">Simpan</button>
+            <input type="Reset" class="btn-reset" value="Batal">
+        </div>
+
+    </form>
+</body>
+
+</html>

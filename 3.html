@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Peserta</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightpink;
+        }
+
+        .card-table {
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px palevioletred;
+            width: 70%;
+            max-width: 500px;
+            margin: 50px auto;       
+        }
+
+        h2, p {
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse; /*menghilangkan border kecil di tabel*/
+            border-color: rgb(172, 168, 168);
+            margin-top: 20px;
+            font-size: 15px;
+            color: dimgray;
+            background-color: rgb(245, 211, 216);
+        }
+
+        .table thead tr {
+            background-color: rgb(238, 188, 195);
+            color: rgb(107, 106, 106);
+            text-align: center;
+        }
+
+        .table th, .table td {
+            border-bottom: 1px solid lightgrey;
+            padding: 5px 5px;
+        }
+
+        .btn-plus {
+            text-align: right;
+        }
+
+        .btn-tambah {
+            display: inline-block; /*button mengikuti karakter text*/
+            padding: 10px 20px;
+            background-color: rgb(238, 188, 195);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .btn-tambah:hover {
+            background-color: rgb(0, 110, 255);
+        }
+
+        .number {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card-table">
+        <h2>Data Peserta</h2>
+        <p> Data berikut adalah data peserta</p>
+
+        <div class="btn-plus">
+            <a href="2.html" class="btn-tambah"> + Tambah Peserta</a>
+        </div>
+
+        <table class="table" border="1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>No. Telepon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="number">1</td>
+                    <td>Alya Fatihah</td>
+                    <td>Alyafatihah11@gmail.com</td>
+                    <td>083872677626</td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td>Oh Sehun</td>
+                    <td>oshbar@gmail.com</td>
+                    <td>083872677626</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
