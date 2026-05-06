@@ -21,23 +21,26 @@
         }
 
         h2 {
-            color:rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
             text-align: center;
         }
 
         p {
-            color:rgb(38, 39, 37);
+            color: rgb(38, 39, 37);
             text-align: center;
         }
+
         .form-group {
             margin-bottom: 20px;
         }
+
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
             font-size: 15px;
         }
+
         input[type='text'],
         input[type='email'],
         input[type='number'] {
@@ -47,13 +50,15 @@
             border-radius: 10px;
             outline: none;
             box-sizing: border-box;
-            transition: border-color 0.3s; 
+            transition: border-color 0.3s;
         }
+
         input:focus {
             border-color: rgb(0, 174, 255);
         }
 
-        .btn-submit, .btn-reset {
+        .btn-submit,
+        .btn-reset {
             width: 140px;
             margin: 5px;
             padding: 15px;
@@ -64,16 +69,19 @@
             cursor: pointer;
             transition: background-color 0.3s
         }
+
         .btn-submit {
             background-color: rgb(0, 0, 0);
-            color: #fff;    
+            color: #fff;
         }
+
         .btn-reset {
             background-color: #fff;
             color: rgb(0, 0, 0);
             font-size: 12px;
             margin-top: 10px;
-        }   
+        }
+
         .btn-submit:hover {
             background-color: rgb(0, 110, 255);
         }
@@ -84,23 +92,27 @@
     <h2>Pendaftaran Siswa</h2>
     <p>Silakan isi data diri anda</p>
 
-    <form method="post" action="3.html">
-        <div class="form-group">
-            <label for="nama">Nama</label>
-            <input type="text" placeholder="Masukkan Nama" required>
-        </div>
-         <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" placeholder="admin@gmail.com" required>
-        </div>
-         <div class="form-group">
-            <label for="number">No. Telpon</label>
-            <input type="number" placeholder="083872677626" required>
-        </div>
-        <div class="form group">
-            <button type="submit" class="btn-submit" value="simpan">Simpan</button>
-            <input type="Reset" class="btn-reset" value="Batal">
-        </div>
+    <form method="post" /*untuk mengirim data ke server/kalo get untuk ambil data*/ action="3.html"
+        enctype="multipart/form-data" /*untuk upload file pdf etc* />
+    <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" /*dikasih name biar bisa isi*/ id="nama" placeholder="Masukkan Nama" required
+            /*kalo mau dimatikan atau tidak bisa diisi pakai disabled />
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="admin@gmail.com" required /*kalo mau gak bisa diisi
+            bisa pakai readonly* />
+    </div>
+    <div class="form-group">
+        <label for="number">No. Telpon</label>
+        <input type="number" name="telepon" id="telepon" placeholder="083872677626" required>
+    </div>
+    <div class="form group">
+        <button type="submit" /*type di sini untuk actionnya maka diisi submit (data yg udah diisi langsung hilang dari
+            layar)*/ class="btn-submit" value="simpan">Simpan</button>
+        <input type="Reset" class="btn-reset" value="Batal">
+    </div>
 
     </form>
 </body>
