@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-inter text-on-surface selection:bg-primary/20">
+    <nav
+        class="fixed top-0 left-0 w-full bg-surface border-b border-outline-variant py-4 px-gutter mx-auto flex justify-between items-center z-50">
+        <div class="flex items-center gap-4">
+            <span class="fw-bold text-primary">Dev_Portfolio</span>
+        </div>
+        <div class="flex items-center gap-7">
+            <a href=""
+                class="font-medium text-primary border-b-2 border-primary pb-1 transition-colors duration-200">Home</a>
+            <a href=""
+                class="font-medium text-on-surface hover:text-primary transition-color duration-200">Experience</a>
+            <a href="" class="font-medium text-on-surface hover:text-primary transition-color duration-200">Project</a>
+            <a href="" class="font-medium text-on-surface hover:text-primary transition-color duration-200">Skills</a>
+            <a href="" class="font-medium text-on-surface hover:text-primary transition-color duration-200">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <div></div>
+            <button
+                class="bg-primary text-on-primary px-2 py-2 rounded-lg hover:brightness-100 transition-all shadow-sm">Download
+                CV</button>
+        </div>
+    </nav>
+
+    <main class="pt-24 min-h-screen">
+        <section
+            class="max-w-container-max mx-auto flex flex-col md:flex-row items-center px-gutter py-section-gap gap-16">
+            <div class="flex-1 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-primary font-bold tracking-widest uppercase block text-label-sm">System
+                        Architecture</span>
+                    <h1 class="text-h1 text-on-surface lg:text-6xl">Alya Fatihah
+                        <span class="text-primary/80 font-bold block">Fullstack Programmer</span>
+                    </h1>
+                </div>
+                <div>
+                    <p
+                        class="text-body-lg text-on-surface-variant max-w-xl border-l-4 border-primary/80 pl-6 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, Earum cupiditate obcaecati nobis
+                        velit ab. Quos, Earum cupiditate obcaecati nobis velit ab. Quos, Earum cupiditate obcaecati
+                        nobis
+                        velit ab.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button
+                            class="bg-primary text-on-primary font-semibold rounded-lg px-8 py-4 hover:brightness-110 active:scale-95 transition-all shadow flex items-center gap-2">
+                            <span>Download CV</span>
+                            <span class="material-symbols-outlined text-[20px]">Download</span>
+                        </button>
+                        <button
+                            class="border-primary/20 text-primary font-semibold rounded-lg px-8 py-4 hover:bg-primary/5 active:scale-95 transition-all">
+                            View Projects
+                        </button>
+                    </div>
+                    </>
+                </div>
+                <div class="flex-1 w-full relative">
+                    <div class="aspect-square w-full max-w-lg mx-auto relative group">
+                        <div
+                            class="absolute -top-4 -right-4 bg-surface-container-lowest p-4 border border-outline-variant rounded-xl z-20 hidden lg:block soft-shadow">
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>
